@@ -41,6 +41,7 @@ async function getBackgroundImg(){
     //change the data in JSON format
     var responseJSON = await response.json();
     var datetime = responseJSON.datetime;
+    console.log(datetime);
 
     // write code slice the datetime
     var hour = datetime.slice(11,13);
@@ -84,4 +85,6 @@ async function getBackgroundImg(){
     }
     //load the image in backgroundImg variable here
     backgroundImg = loadImage(bg);
+
+    
 }
